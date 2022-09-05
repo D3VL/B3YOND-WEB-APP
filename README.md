@@ -1,4 +1,4 @@
-<img height="30px" src="https://raw.githubusercontent.com/D3VL/B3YOND-WEB-APP/blob/main/src/img/logo.png" alt="B3YOND LOGO">
+<img height="30px" src="https://raw.githubusercontent.com/D3VL/B3YOND-WEB-APP/main/src/img/logo.png" alt="B3YOND LOGO">
 
 # &nbsp;The DJI Multitool
 
