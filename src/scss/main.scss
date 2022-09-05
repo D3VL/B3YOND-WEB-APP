@@ -1,0 +1,40 @@
+@import '../../node_modules/bootstrap/scss/bootstrap.scss';
+* {
+    box-sizing: border-box !important;
+}
+
+.container {
+    padding-top: 10px;
+}
+
+.logo {
+    max-width: 330px;
+    margin: 15px 0;
+}
+
+.d3vl-link {
+    color: #ff3e3e;
+    text-decoration: none;
+}
+
+.ModelBox {
+    margin: 11px;
+
+    .card {
+
+        &:hover {
+            background-color: rgb(237, 237, 237);
+        } 
+ 
+        img {
+            width: 180px;
+            height: 180px;
+        }
+    }
+
+    width: 180px;
+
+    text-decoration: none;
+    color: black;
+    text-align: center;
+}
