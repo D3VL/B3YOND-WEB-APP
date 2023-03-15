@@ -1,36 +1,41 @@
 {
-  "name": "b3yond-tool",
-  "version": "1.0.0",
-  "description": "b3yond tool",
-  "main": "index.js",
-  "scripts": {
-    "dev": "npx gulp dev",
-    "build": "npx gulp"
-  },
-  "author": "",
-  "license": "ISC",
+  "name": "b3yond-web-app",
+  "version": "0.1.0",
+  "private": true,
   "dependencies": {
-    "bootstrap": "^5.2.0",
-    "vue": "^3.2.38",
-    "vue-resource": "^1.5.3",
-    "vue-router": "^4.1.5"
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "bootstrap": "^5.2.3",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.9.0",
+    "react-scripts": "5.0.1",
+    "sass": "^1.59.2",
+    "web-vitals": "^2.1.4"
   },
-  "devDependencies": {
-    "@babel/preset-env": "^7.18.10",
-    "babel-loader": "^8.2.5",
-    "browser-sync": "^2.27.10",
-    "del": "^3.0.0",
-    "gulp": "^4.0.2",
-    "gulp-autoprefixer": "^8.0.0",
-    "gulp-clean-css": "3.9.4",
-    "gulp-concat": "^2.6.1",
-    "gulp-ejs": "^5.1.0",
-    "gulp-rename": "^1.4.0",
-    "gulp-sass": "^5.1.0",
-    "gulp-sourcemaps": "^2.6.5",
-    "sass": "^1.49.0",
-    "vue-loader": "^17.0.0",
-    "webpack-cli": "^4.10.0",
-    "webpack-stream": "^7.0.0"
+  "scripts": {
+    "start": "npx react-scripts start",
+    "build": "npx react-scripts build",
+    "test": "npx react-scripts test",
+    "eject": "npx react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }

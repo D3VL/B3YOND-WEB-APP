@@ -1,14 +1,11 @@
 @import '../../node_modules/bootstrap/scss/bootstrap.scss';
+
 * {
     box-sizing: border-box !important;
 }
 
-.container {
-    padding-top: 10px;
-}
-
 .logo {
-    max-width: 330px;
+    max-width: 270px;
     margin: 15px 0;
 }
 
@@ -17,24 +14,103 @@
     text-decoration: none;
 }
 
-.ModelBox {
-    margin: 11px;
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
 
-    .card {
+.connection-status {
+    &::after {
+        content: '';
+        display: inline-block;
+        width: 9px;
+        height: 9px;
+        margin-left: 3px;
+        border-radius: 50%;
+        position: relative;
+    }
 
-        &:hover {
-            background-color: rgb(237, 237, 237);
-        } 
- 
-        img {
-            width: 180px;
-            height: 180px;
+    &.connected::after {
+        background-color: #6ff165;
+    }
+
+    &.connecting::after {
+        background-color: #ffc53e;
+    }
+
+    &.disconnected::after {
+        background-color: #ff3e3e;
+    }
+
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    font-size: 13px;
+}
+
+.CommandListItem {
+    overflow: hidden;
+
+
+    .CommandListItem-contents {
+        z-index: 4;
+        height: fit-content;
+        max-width: 60%;
+    }
+
+    &:hover {
+        filter: drop-shadow(0 0 5px #b5b5b5);
+    }
+
+    .CommandListItem-bg-image {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: 1;
+        opacity: 0.5;
+    }
+
+    .CommandListItem-model-image {
+        position: absolute;
+        right: -40px;
+        top: -100%;
+        z-index: 2;
+        max-width: 60%;
+        height: 300%;
+        object-fit: cover;
+        object-position: left;
+        // on super small, right: 0; 
+
+        @media (max-width: 350px) {
+            right: -20px;
+
         }
     }
 
-    width: 180px;
+    .CommandListItem-sponsor {
+        position: absolute;
+        bottom: 0;
+        font-size: 11px;
+    }
 
-    text-decoration: none;
-    color: black;
-    text-align: center;
+    .CommandListItem-experimental {
+        position: absolute;
+        top: -2px;
+        right: 5px;
+    }
+}
+
+
+.navLinkNoDecoration {
+    text-decoration: inherit;
+    color: inherit;
+
+    &:hover {
+        text-decoration: inherit;
+        color: inherit;
+    }
 }
